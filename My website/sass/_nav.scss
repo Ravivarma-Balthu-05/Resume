@@ -1,0 +1,24 @@
+/*------- Nav bar------*/
+.nav_bar{
+    .ul_nav{
+        z-index: 100;
+        background-color: white;
+        position: fixed;
+        top: 13%;
+        right:5%;
+        padding: 20px;
+        // left: 0%;
+        li{
+            font-size: 15px;
+            list-style: none;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+.hidden{
+    display: none;
+}

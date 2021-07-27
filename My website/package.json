@@ -1,0 +1,18 @@
+{
+  "name": "ravi_resume",
+  "version": "1.0.0",
+  "description": "This website is about me",
+  "main": "index.js",
+  "scripts": {
+    "devserver":"live-server",
+    "compile:sass":"node-sass sass/main.scss css/style.css -w",
+    "start": "npm-run-all --parallel devserver compile:sass"
+    
+  },
+  "author": "Ravivarma Balthu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
