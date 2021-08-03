@@ -4,7 +4,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
   font-family: 'Poppins', sans-serif; }
 
 .main {
@@ -14,11 +13,13 @@ html {
   overflow: hidden; }
   .main .intro h1 {
     padding-top: 5%;
-    padding-bottom: 20%;
     font-size: 22px; }
+    .main .intro h1 a {
+      color: black; }
   .main .intro h2 {
+    padding-top: 20%;
     font-size: 18px;
-    color: #D5C455;
+    color: #73c571;
     font-weight: 500; }
   .main .intro h3 {
     font-size: 50px; }
@@ -26,7 +27,7 @@ html {
       display: block; }
   .main .intro .more_about {
     border: 0px;
-    background-color: #D5C455;
+    background-color: #73c571;
     padding: 15px;
     color: white;
     font-weight: 700;
@@ -34,9 +35,14 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-    margin-right: 5px; }
+    margin-right: 5px;
+    transition: all 0.5s; }
     .main .intro .more_about img {
       padding-left: 10px; }
+    .main .intro .more_about a {
+      color: aliceblue; }
+  .main .intro .more_about:hover {
+    transform: scale(1.05); }
   .main .intro .hire {
     border: 0px;
     padding: 15px;
@@ -44,41 +50,58 @@ html {
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.5s; }
     .main .intro .hire img {
       padding-left: 10px; }
+    .main .intro .hire a {
+      color: black; }
+  .main .intro .hire:hover {
+    transform: scale(1.05); }
   .main .intro .footer {
     padding-top: 35%;
     font-size: 15px; }
     .main .intro .footer h4 {
       font-weight: 300; }
   .main .right {
-    background-color: #D5C455;
+    background-color: #a5ccb7;
     height: 100vh; }
     .main .right .photo {
       position: absolute;
       float: right;
-      width: 50%;
-      left: 50%;
+      width: 35%;
+      left: 63%;
       bottom: 0%; }
-    .main .right .hamburger {
+    .main .right .opn {
       position: relative;
       top: 5%;
       left: 85%;
-      padding-top: 30px;
+      padding-top: 50px;
       z-index: 100; }
-      .main .right .hamburger i {
-        cursor: pointer; }
+    .main .right .close {
+      position: relative;
+      top: 5%;
+      left: 85%;
+      padding-top: 50px;
+      z-index: 100; }
+    .main .right .hidden {
+      display: none; }
 
 button {
   margin-top: 5%; }
+
+i {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
 
 /*------- Nav bar------*/
 .nav_bar .ul_nav {
   z-index: 100;
   background-color: white;
   position: fixed;
-  top: 13%;
+  top: 15%;
   right: 5%;
   padding: 20px; }
   .nav_bar .ul_nav li {
@@ -91,3 +114,77 @@ button {
 
 .hidden {
   display: none; }
+
+.main .intro .about_name {
+  position: relative; }
+  .main .intro .about_name h2 {
+    font-size: 35px !important;
+    padding-top: 15% !important;
+    padding-bottom: 5%; }
+
+.main .intro .about_summary p {
+  text-align: justify;
+  padding-right: 5%; }
+
+.main .intro .skills {
+  padding-top: 3%; }
+  .main .intro .skills p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0c5c31; }
+  .main .intro .skills i {
+    color: #39b874;
+    padding-right: 5px;
+    cursor: default; }
+  .main .intro .skills ul {
+    padding-top: 3%;
+    list-style: none; }
+
+.main .intro .about_engi {
+  padding-bottom: 0% !important;
+  padding-left: -1%; }
+
+.main .intro .education_engi {
+  padding-top: 10px;
+  padding-left: 5%; }
+  .main .intro .education_engi .engi {
+    font-size: 25px !important; }
+  .main .intro .education_engi .ul_engi {
+    list-style: none;
+    padding-top: 10px; }
+    .main .intro .education_engi .ul_engi i {
+      padding-right: 10px;
+      color: #39b874; }
+
+.main .intro .education_engi:hover .engi {
+  border-bottom: 3px solid #39b874;
+  margin-right: 50%; }
+
+.main .intro .skills .contact_p {
+  text-align: justify;
+  padding-right: 10px; }
+
+.main .intro .skills .contact {
+  display: flex; }
+  .main .intro .skills .contact li {
+    padding-top: 5%;
+    padding-right: 5%; }
+    .main .intro .skills .contact li i {
+      font-size: 45px;
+      cursor: pointer;
+      transition: all 0.5s; }
+  .main .intro .skills .contact .twitter:hover i {
+    color: #1DA1F2;
+    transform: scale(1.2); }
+  .main .intro .skills .contact .instagram:hover i {
+    color: #8a3ab9;
+    transform: scale(1.2); }
+  .main .intro .skills .contact .linkedin:hover i {
+    color: #0e76a8;
+    transform: scale(1.2); }
+  .main .intro .skills .contact .github:hover i {
+    color: black;
+    transform: scale(1.2); }
+  .main .intro .skills .contact .gmail:hover i {
+    color: #c44141;
+    transform: scale(1.2); }

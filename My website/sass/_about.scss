@@ -1,0 +1,37 @@
+//  font-family: 'Poppins', sans-serif;
+.main{
+    .intro{
+        .about_name{
+            position: relative;
+            h2{
+                font-size: 35px !important;
+                padding-top: 15%!important; 
+                padding-bottom: 5%;     
+            }
+        }
+        .about_summary{
+            p{
+                text-align: justify;
+                padding-right: 5%;
+            }
+        }
+        .skills{
+            padding-top: 3%;
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                color: #0c5c31;
+            }
+            i{
+                color: #39b874;
+                padding-right: 5px;
+                cursor:default;
+            }
+            ul{
+                padding-top: 3%;
+                list-style: none;
+            }
+
+        }
+    }
+}

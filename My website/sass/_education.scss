@@ -1,0 +1,31 @@
+.main{
+    .intro{
+        .about_engi{
+            padding-bottom: 0% !important;
+            padding-left: -1%;
+        }
+        .education_engi{
+            padding-top: 10px;
+            padding-left: 5%;
+            .engi{
+                font-size: 25px !important;
+                // transition: all 0.9s;
+            }
+            .ul_engi{
+                list-style: none;
+                padding-top: 10px;
+                i{
+                    padding-right: 10px;
+                    color: #39b874;
+                }
+            }
+
+        }
+        .education_engi:hover{
+            .engi{
+                border-bottom: 3px solid #39b874;
+                margin-right: 50%;;
+            }
+        }
+    }
+}

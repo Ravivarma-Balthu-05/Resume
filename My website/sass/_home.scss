@@ -1,3 +1,6 @@
+// #a5ccb7
+// #D5C455
+//#73c571
 *{
   margin: 0;
   padding: 0;
@@ -5,7 +8,6 @@
 }
 html{
   box-sizing: border-box;
-  font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -14,15 +16,19 @@ html{
   grid-template-columns: repeat(2,1fr);
   padding-left:15%;
   overflow: hidden;
+  // font-size: 62.5%;
   .intro{
     h1{
       padding-top: 5%;
-      padding-bottom: 20%;
       font-size: 22px;
+      a{
+        color: black;
+      }
     }
     h2{
+      padding-top: 20%;
       font-size: 18px;
-      color: #D5C455;
+      color: #73c571;
       font-weight: 500;
     }
     h3{
@@ -33,7 +39,7 @@ html{
     }
     .more_about{
       border: 0px;
-      background-color: #D5C455;
+      background-color: #73c571;
       padding: 15px;
       color: white;
       font-weight: 700;
@@ -42,9 +48,17 @@ html{
       letter-spacing: 1px;
       cursor: pointer;
       margin-right: 5px;
+      transition: all 0.5s;
+      // transform: scale(1.01);
       img{
         padding-left: 10px;
       }
+      a{
+        color: aliceblue;
+      }
+    }
+    .more_about:hover{ 
+        transform: scale(1.05);
     }
     .hire{
       border: 0px;
@@ -54,9 +68,17 @@ html{
       text-transform: uppercase;
       letter-spacing: 1px;
       cursor: pointer;
+      transition: all 0.5s;
+      // transform: scale(1);
       img{
         padding-left: 10px;
       }
+      a{
+        color: black;
+      }
+    }
+    .hire:hover{ 
+      transform: scale(1.05);
     }
     .footer{
       padding-top: 35%;
@@ -67,27 +89,40 @@ html{
     }
   }
   .right{
-    background-color: #D5C455;
+    background-color: #a5ccb7;
     height: 100vh;
     .photo{
       position: absolute;
       float: right;
-      width: 50%;
-      left: 50%;
+      width: 35%;
+      left: 63%;
       bottom: 0%
     }
-    .hamburger{
+    .opn{
       position: relative;    
       top: 5%;  // padding-right: 17%;
       left: 85%;
-      padding-top: 30px;
+      padding-top: 50px;
       z-index: 100;
-      i{
-        cursor: pointer;
-      }
+    }
+    .close{
+      position: relative;    
+      top: 5%;  // padding-right: 17%;
+      left: 85%;
+      padding-top: 50px;
+      z-index: 100;
+    }
+    .hidden{
+      display: none;
     }
   }
 }
 button{
   margin-top: 5%;
+}
+i{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
 }

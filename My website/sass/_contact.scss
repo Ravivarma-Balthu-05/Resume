@@ -1,0 +1,54 @@
+.main{
+    .intro{
+        .skills{
+            .contact_p{
+                text-align: justify;
+                padding-right: 10px;
+            }
+            .contact{
+                display: flex;
+                li{
+                    padding-top: 5%;
+                    padding-right: 5%;
+                    i{
+                        font-size: 45px;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                    }
+                }
+                .twitter:hover{
+                    i{
+                        color: #1DA1F2;
+                        transform:scale(1.2);
+                    }
+                }
+                .instagram:hover{
+                    i{
+                       color: #8a3ab9;
+                       transform:scale(1.2);	
+                    }
+                }
+                .linkedin:hover{
+                    i{
+                        color:#0e76a8;
+                        transform:scale(1.2);
+                    }
+                    
+                }
+                .github:hover{
+                    i{
+                        color:black;
+                        transform:scale(1.2);
+                    }
+                }
+                .gmail:hover{
+                    i{
+                        color: rgb(196, 65, 65);
+                        transform:scale(1.2);
+                    }
+                    
+                }
+            }
+        }
+    }
+}
