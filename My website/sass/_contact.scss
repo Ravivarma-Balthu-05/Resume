@@ -1,6 +1,11 @@
 .main{
     .intro{
         .skills{
+            @media (max-width:600px) {
+                p{
+                    color: black;
+                }  
+            }
             .contact_p{
                 text-align: justify;
                 padding-right: 10px;
@@ -15,6 +20,7 @@
                         cursor: pointer;
                         transition: all 0.5s;
                     }
+                   
                 }
                 .twitter:hover{
                     i{

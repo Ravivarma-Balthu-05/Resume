@@ -18,6 +18,12 @@
                     padding-right: 10px;
                     color: #39b874;
                 }
+                @media (max-width:600px) {
+                    i{
+                        color: #ffd89b;
+                    }
+                    
+                }
             }
 
         }
@@ -26,6 +32,15 @@
                 border-bottom: 3px solid #39b874;
                 margin-right: 50%;;
             }
+            @media (max-width:600px) {
+                .engi{
+                    color: #ffd89b;
+                    border-bottom: 3px solid #ffd89b;
+                    margin-right: 30%;
+                }
+                
+            }
         }
+        
     }
 }

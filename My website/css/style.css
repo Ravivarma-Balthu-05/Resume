@@ -19,7 +19,9 @@ html {
   .main .intro h2 {
     padding-top: 20%;
     font-size: 18px;
-    color: #73c571;
+    color: #ffd89b;
+    color: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+    color: linear-gradient(to right, #19547b, #ffd89b);
     font-weight: 500; }
   .main .intro h3 {
     font-size: 50px; }
@@ -27,7 +29,9 @@ html {
       display: block; }
   .main .intro .more_about {
     border: 0px;
-    background-color: #73c571;
+    background: #ffd89b;
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+    background: linear-gradient(to right, #19547b, #ffd89b);
     padding: 15px;
     color: white;
     font-weight: 700;
@@ -63,8 +67,24 @@ html {
     font-size: 15px; }
     .main .intro .footer h4 {
       font-weight: 300; }
+  .main .intro .opn {
+    position: absolute;
+    top: 0%;
+    left: 95%;
+    padding-top: 50px;
+    z-index: 100; }
+  .main .intro .close {
+    position: absolute;
+    top: 0%;
+    left: 95%;
+    padding-top: 50px;
+    z-index: 100; }
+  .main .intro .hidden {
+    display: none; }
   .main .right {
-    background-color: #a5ccb7;
+    background: #ffd89b;
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+    background: linear-gradient(to right, #19547b, #ffd89b);
     height: 100vh; }
     .main .right .photo {
       position: absolute;
@@ -72,20 +92,6 @@ html {
       width: 35%;
       left: 63%;
       bottom: 0%; }
-    .main .right .opn {
-      position: relative;
-      top: 5%;
-      left: 85%;
-      padding-top: 50px;
-      z-index: 100; }
-    .main .right .close {
-      position: relative;
-      top: 5%;
-      left: 85%;
-      padding-top: 50px;
-      z-index: 100; }
-    .main .right .hidden {
-      display: none; }
 
 button {
   margin-top: 5%; }
@@ -95,6 +101,38 @@ i {
 
 a {
   text-decoration: none; }
+
+/*-------------Media Queries--------*/
+@media (max-width: 600px) {
+  .main {
+    padding: 5%;
+    display: block;
+    background: #808080;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3fada8, #808080);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3fada8, #808080);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    overflow: hidden; }
+    .main .intro h1, .main .intro h2, .main .intro h3 {
+      padding-top: 15%; }
+    .main .intro h2 {
+      font-size: 20px; }
+    .main .intro h3 {
+      font-size: 35px;
+      padding-bottom: 15%; }
+    .main .intro .opn {
+      position: absolute;
+      left: 85%; }
+    .main .intro .close {
+      left: 85%; } }
+
+@media (max-width: 600px) {
+  .main .right {
+    display: none; }
+    .main .right .photo {
+      display: none; } }
 
 /*------- Nav bar------*/
 .nav_bar .ul_nav {
@@ -114,6 +152,11 @@ a {
 
 .hidden {
   display: none; }
+
+@media (max-width: 600px) {
+  .nav_bar .ul_nav {
+    position: fixed;
+    top: 15%; } }
 
 .main .intro .about_name {
   position: relative; }
@@ -136,6 +179,11 @@ a {
     color: #39b874;
     padding-right: 5px;
     cursor: default; }
+  @media (max-width: 600px) {
+    .main .intro .skills i {
+      color: #ffd89b; }
+    .main .intro .skills p {
+      color: #ffd99bc2; } }
   .main .intro .skills ul {
     padding-top: 3%;
     list-style: none; }
@@ -155,10 +203,23 @@ a {
     .main .intro .education_engi .ul_engi i {
       padding-right: 10px;
       color: #39b874; }
+    @media (max-width: 600px) {
+      .main .intro .education_engi .ul_engi i {
+        color: #ffd89b; } }
 
 .main .intro .education_engi:hover .engi {
   border-bottom: 3px solid #39b874;
   margin-right: 50%; }
+
+@media (max-width: 600px) {
+  .main .intro .education_engi:hover .engi {
+    color: #ffd89b;
+    border-bottom: 3px solid #ffd89b;
+    margin-right: 30%; } }
+
+@media (max-width: 600px) {
+  .main .intro .skills p {
+    color: black; } }
 
 .main .intro .skills .contact_p {
   text-align: justify;

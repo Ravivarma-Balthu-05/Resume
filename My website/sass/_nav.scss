@@ -22,3 +22,12 @@
 .hidden{
     display: none;
 }
+@media (max-width:600px) {
+    .nav_bar{
+        .ul_nav{
+            position: fixed;
+            top: 15%;
+        }
+    }
+    
+}

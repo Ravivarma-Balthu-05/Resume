@@ -27,6 +27,14 @@
                 padding-right: 5px;
                 cursor:default;
             }
+            @media (max-width:600px) {
+                i{
+                    color: #ffd89b;
+                }
+                p{
+                    color: #ffd99bc2;
+                } 
+            }
             ul{
                 padding-top: 3%;
                 list-style: none;
