@@ -137,7 +137,7 @@ a {
 /*------- Nav bar------*/
 .nav_bar .ul_nav {
   z-index: 100;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.459);
   position: fixed;
   top: 15%;
   right: 5%;
@@ -156,7 +156,9 @@ a {
 @media (max-width: 600px) {
   .nav_bar .ul_nav {
     position: fixed;
-    top: 15%; } }
+    top: 15%; }
+    .nav_bar .ul_nav .WHITE {
+      display: none; } }
 
 .main .intro .about_name {
   position: relative; }
@@ -249,3 +251,31 @@ a {
   .main .intro .skills .contact .gmail:hover i {
     color: #c44141;
     transform: scale(1.2); }
+
+.dark_main {
+  background-color: rgba(0, 0, 0, 0.836); }
+  .dark_main .intro h1 a {
+    color: aliceblue; }
+  .dark_main .intro h3 {
+    color: aliceblue; }
+
+.dark_main .education_engi .engi {
+  color: aliceblue; }
+
+.dark_main .education_engi li {
+  color: aliceblue; }
+
+.dark_main .intro .about_summary .summary {
+  color: aliceblue; }
+
+.dark_main .intro .skills p {
+  color: aliceblue; }
+
+.dark_main .intro .skills .ul_tech li {
+  color: aliceblue; }
+
+.dark_main .intro .skills .contact_p {
+  color: aliceblue; }
+
+.dark_main .intro .skills .contact i {
+  color: aliceblue; }

@@ -1,0 +1,63 @@
+.dark_main{
+    background-color: rgba(0, 0, 0, 0.836);
+    .intro{
+        h1{
+            a{
+                color: aliceblue;
+            }
+        }
+        h3{
+            color: aliceblue;
+        }
+    }
+}
+
+//Education
+.dark_main{
+    .education_engi{
+        .engi{
+            color: aliceblue;
+        }
+        li{
+            color: aliceblue;
+        }
+       
+    }
+}
+
+//About Me 
+.dark_main{
+    .intro{
+        .about_summary{
+            .summary{
+                color: aliceblue; 
+            }
+        }
+        .skills{
+            p{
+                color: aliceblue; 
+            }
+            .ul_tech{
+                li{
+                    color: aliceblue; 
+                }
+            }
+        }
+    }
+}
+// contact
+
+.dark_main{
+    .intro{
+        .skills{
+            .contact_p{
+                color: aliceblue;
+            }
+            .contact{
+                i{
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+}

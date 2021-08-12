@@ -2,7 +2,7 @@
 .nav_bar{
     .ul_nav{
         z-index: 100;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.459);
         position: fixed;
         top: 15%;
         right:5%;
@@ -27,7 +27,11 @@
         .ul_nav{
             position: fixed;
             top: 15%;
+            .WHITE{
+                display: none;
+            }
         }
+
     }
     
 }
